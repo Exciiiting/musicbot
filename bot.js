@@ -254,9 +254,9 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
-─═══════ **✯ Music Commands ✯** ═══════─
+─═══════ ✯** Music Commands **✯ ═══════─
 
-**${prefix}play** - To Play A Song From Youtube**
+**${prefix}play** - To Play A Song From Youtube.
 
 **${prefix}skip** - To Skip The Song And Play The Next Song.
 
@@ -264,11 +264,11 @@ client.on("message", message => {
 
 **${prefix}resume** - To Resume The Song.
 
-**${prefix}vol -** To Change The Volume Song.
+**${prefix}vol** - To Change The Volume Song.
 
 **${prefix}leave** - To Disconnect The Bot From Your Voicechannel.
 
-**${prefix}np -** To View The Song Played.
+**${prefix}np** - To View The Song Played.
 
 **${prefix}queue** - To View The Songs Queue.
 
