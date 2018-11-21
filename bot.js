@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "1" 
+const prefix = "-" 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+ client.user.setActivity("-help | Only Music.",{type: 'WATCHING'})
     console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -224,12 +225,12 @@ function play(guild, song) {
 }
  
 const adminprefix = "-";
-const devs = ['حط ايدي تبعك'];
+const devs = ['323160008411971585'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
    
-if (message.content.startsWith(adminprefix + 'setgdame')) {
+if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 } else
@@ -242,7 +243,7 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else    
-if (message.content.startsWith(adminprefix + 'setT')) {
+if (message.content.startsWith(adminprefix + 'st')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
@@ -252,20 +253,28 @@ client.on("message", message => {
     if (message.content === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
-      .setDescription(`─═══════ {✯:dart: Music Commands - اوامر الموسيقى :dart:✯} ═══════─
-${prefix}play => To Play A Song From Youtube
-${prefix}skip => To Skip The Song And Play The Next Song
-${prefix}stop => To Pause The Song
-${prefix}resume => To Resume The Song
-${prefix}vol => To Change The Volume Song
-${prefix}leave => To Disconnect The Bot From Your Voicechannel
-${prefix}np => To View The Song Played
-${prefix}queue => To View The Songs Queue
-${prefix}invite => To Invite The Bot In Your Server
+      .setDescription(`─═══════ Music Commands ✯═══════─
+${prefix}play =>** To Play A Song From Youtube**
+
+${prefix}skip =>** To Skip The Song And Play The Next Song**
+
+${prefix}stop =>** To Pause The Song**
+
+${prefix}resume =>** To Resume The Song**
+
+${prefix}vol =>** To Change The Volume Song**
+
+${prefix}leave =>** To Disconnect The Bot From Your Voicechannel**
+
+${prefix}np =>** To View The Song Played**
+
+${prefix}queue =>** To View The Songs Queue**
+
+${prefix}invite =>** To Invite The Bot In Your Server**
 
  `)
-   message.author.sendEmbed(embed)
-      message.channel.send(`:white_check_mark: I've DMed you with my help list`)
+   
+      message.channel.send(`**:white_check_mark:| I sent all the orders on your **`)
    
    }
    });
