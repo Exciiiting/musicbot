@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-" 
+const prefix = "V" 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
- client.user.setActivity("-help | Only Music.",{type: 'WATCHING'})
+ client.user.setActivity("Vhelp | Only Music.",{type: 'WATCHING'})
     console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -224,7 +224,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`Starting The Song : **${song.title}**`);
 }
  
-const adminprefix = "-";
+const adminprefix = "V";
 const devs = ['323160008411971585'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
