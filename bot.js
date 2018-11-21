@@ -307,5 +307,10 @@ client.on('message', message => {
     message.author.send({embed})
   }
 });
+
+client.on('ready', () => {
+   console.log(`----------------`);
+client.user.setStatus("idle")
+});
  
 client.login(process.env.BOT_TOKEN);
