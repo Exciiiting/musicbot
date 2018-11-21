@@ -273,8 +273,8 @@ ${prefix}queue =>** To View The Songs Queue**
 ${prefix}invite =>** To Invite The Bot In Your Server**
 
  `)
-   message.author.send
-      message.channel.send(`**:white_check_mark:| I sent all the orders on your **`)
+      message.author.sendEmbed(embed)
+      message.channel.send(`**:white_check_mark: | I sent all the orders on Your **`)
    
    }
    });
