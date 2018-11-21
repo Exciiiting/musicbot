@@ -253,24 +253,26 @@ client.on("message", message => {
     if (message.content === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
-      .setDescription(`─═══════ Music Commands ✯═══════─
-${prefix}play =>** To Play A Song From Youtube**
+      .setDescription(`
+─═══════ **✯ Music Commands ✯** ═══════─
 
-${prefix}skip =>** To Skip The Song And Play The Next Song**
+**${prefix}play** - To Play A Song From Youtube**
 
-${prefix}stop =>** To Pause The Song**
+**${prefix}skip** - To Skip The Song And Play The Next Song.
 
-${prefix}resume =>** To Resume The Song**
+**${prefix}stop** - To Pause The Song.
 
-${prefix}vol =>** To Change The Volume Song**
+**${prefix}resume** - To Resume The Song.
 
-${prefix}leave =>** To Disconnect The Bot From Your Voicechannel**
+**${prefix}vol -** To Change The Volume Song.
 
-${prefix}np =>** To View The Song Played**
+**${prefix}leave** - To Disconnect The Bot From Your Voicechannel.
 
-${prefix}queue =>** To View The Songs Queue**
+**${prefix}np -** To View The Song Played.
 
-${prefix}invite =>** To Invite The Bot In Your Server**
+**${prefix}queue** - To View The Songs Queue.
+
+**${prefix}invite** - To Invite The Bot In Your Server.
 
  `)
       message.author.sendEmbed(embed)
